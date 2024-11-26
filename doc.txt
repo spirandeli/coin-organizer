@@ -1,0 +1,44 @@
+Estrutura de Relacionamento das Entidades
+
+Usuário
+
+    Cada usuário pode ter:
+        Múltiplas categorias.
+        Diversas contas.
+        Várias transações.
+        Diferentes orçamentos.
+        Transações recorrentes associadas.
+
+Categoria (Category)
+
+    Relacionamentos:
+        Uma categoria pertence a um usuário.
+        Uma categoria pode ter várias transações.
+        Uma categoria pode estar vinculada a diferentes orçamentos.
+
+Conta (Account)
+
+    Relacionamentos:
+        Uma conta pertence a um usuário.
+        Uma conta pode ter várias transações.
+        Uma conta pode ter várias transações recorrentes.
+
+Transação (Transaction)
+
+    Relacionamentos:
+        Uma transação pertence a um usuário.
+        Uma transação está vinculada a uma conta.
+        Opcionalmente, uma transação pode estar associada a uma categoria.
+
+Orçamento (Budget)
+
+    Relacionamentos:
+        Um orçamento pertence a um usuário.
+        Um orçamento está associado a uma categoria.
+
+Transação Recorrente (RecurringTransaction)
+
+    Relacionamentos:
+        Uma transação recorrente pertence a um usuário.
+        Uma transação recorrente está vinculada a uma conta.
+        Opcionalmente, uma transação recorrente pode estar associada a uma categoria.
